@@ -22,9 +22,7 @@ def process(list1, list2):
 
 
 if __name__ == "__main__":
-    first_list = []
-    for i in range(1, 1000):
-        first_list.append(i)
+    first_list = [i for i in range(1,1000)]
     second_list = first_list[::-2]
     response = process(first_list, second_list)
     print(f"Total numbers calculated: {len(response)}")
