@@ -1,8 +1,8 @@
 
-def find_largest_num(input: list):
+def find_largest_num(data_input: list):
     largest_num = None
-    if input and type(input) == list:
-        for num in input:
+    if data_input and type(data_input) == list:
+        for num in data_input:
             if type(num) != int:
                 continue
             if not largest_num:

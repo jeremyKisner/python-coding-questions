@@ -1,10 +1,10 @@
 
-def disorder(input: str):
+def disorder(data_input: str):
     result = []
-    if input:
-        for i in range(len(input)):
+    if data_input:
+        for i in range(len(data_input)):
             x = 2+i
-            temp = input[::x]
+            temp = data_input[::x]
             temp = temp.replace(" ", "")
             result.append(temp.strip())
     return "".join(result)
