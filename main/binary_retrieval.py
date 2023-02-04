@@ -1,8 +1,11 @@
 def binary_retrieval(arr, item):
+    iterations = 0
     first = 0
     last = len(arr) - 1
     found = []
     while first <= last:
+        iterations += 1
+        print(f'number of iterations {iterations}')
         midpoint = (first + last) // 2
         if arr[midpoint] == item:
             found.append(arr[midpoint])
