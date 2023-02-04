@@ -1,4 +1,6 @@
 from bubble_sort import bubble_sort
+from random_generator import random_list
+
 
 def binary_search(arr, item):
     first = 0
@@ -13,10 +15,14 @@ def binary_search(arr, item):
                 last = midpoint - 1
             else:
                 first = midpoint + 1
+    print(f"Item found? {found}")
     return found
 
 
 if __name__ == "__main__":
-    my_arr = [5, 2, 6, 9, 3]
+    my_arr = random_list()
+    print(f"INPUT: {my_arr}")
     my_arr = bubble_sort(my_arr)
-    print(binary_search(my_arr, 2))
+    print(f"SORTED: {my_arr}")
+    search_key = input("what do you want to look for? ")
+    binary_search(my_arr, int(search_key))
