@@ -1,12 +1,5 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-#
 # Complete the 'diagonalDifference' function below.
 #
 # The function is expected to return an INTEGER.
